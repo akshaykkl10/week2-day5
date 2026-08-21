@@ -5,3 +5,13 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
+.hero {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(
+        to right, 
+        #ABABFC,
+        #C2EBF5
+    );
+    place-items: center;
+}

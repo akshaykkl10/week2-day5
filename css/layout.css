@@ -1,7 +1,47 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 100;
+    padding: 2rem;
+}
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding-left: clamp(0rem, 2rem + 10vw, 50rem);
+    justify-self: center;
+    
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.quote{
+    display: flex;
+    flex-wrap: wrap;
+    width: clamp(10vw, 20hw, 30vw);
+    height: clamp(5vh, 10vh, 15vh);
+    overflow: hidden;
+    height: 30px;
+}
+.quotes{
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    place-items: center;
+}
+footer {
+    place-items: center;
+    background: linear-gradient(
+        to right,
+        rgb(255, 152, 152),
+        rgb(164, 247, 255)
+    );
 }
