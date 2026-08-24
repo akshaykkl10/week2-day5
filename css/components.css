@@ -1,5 +1,5 @@
 .card {
-    overflow: auto;
+    overflow:auto;
     padding: 2rem;
     margin: 2rem;
     height: clamp(30vh,32vh ,36vh);

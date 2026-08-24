@@ -10,8 +10,8 @@
     min-width: 100vw;
     background: linear-gradient(
         to right, 
-        #ABABFC,
-        #C2EBF5
-    );
+        rgba(255, 152, 152, 0.5),
+        rgba(164, 247, 255, 0.5)
+    ), url("https://picsum.photos/seed/picsum/200/300") center / cover no-repeat;
     place-items: center;
 }
