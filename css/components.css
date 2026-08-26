@@ -1,3 +1,19 @@
+nav a {
+    padding: 5px;
+    color: var(--color-surface);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--color-primary);
+}
+
+a:hover {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
 .card {
     overflow:auto;
     padding: 2rem;
@@ -9,46 +25,56 @@
     background-color: var(--color-surface);
     
 }
+
 .motto{
     font-size: clamp(2.4rem, 5vw, 5rem);
     font-style: italic;
     text-align: center;
 }
+
 .logo {
     border: 2px solid black;
     padding: 10px;
+    color: var(--color-surface);
 }
-nav a {
-    padding: 5px;
-}
+
+
+
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0);
+    box-shadow: 0 4px 8px rgb(0 0 0);
     outline: 10px solid var(--color-primary);
-    transition: transform box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
+
 th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid var(--color-border);
 }
+
 .table-wrapper {
     margin: 20px;
 }
+
 .table-wrapper thead {
     position: sticky;
     top: 10rem;
     z-index: 10;
     background-color: var(--color-bg);
 }
+
 .table-wrapper tr:nth-child(even) {
     background-color: var(--color-surface);
 } 
+
 .table-wrapper .recommended {
     background-color: var(--color-primary);
     color: var(--color-on-primary);
 
 }
+
 .cta {
     background-color: var(--color-accent);
     color: var(--color-bg);
@@ -66,11 +92,18 @@ th, td {
     justify-content: center;
     padding: 1rem;
 }
+
 .cta form input, .cta form textarea {
     border: 1px solid var(--color-border);
     border-radius: 0.5rem;
     flex: 1;
 }
+
+.team-select button {
+    padding: 1rem;
+    font-size: clamp(1.8rem, 2vw + 0.5rem, 3rem);;
+}
+
 .cta form button {
    justify-self: flex-end;
 }

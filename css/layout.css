@@ -6,14 +6,17 @@ header {
     top: 0;
     z-index: 100;
     padding: 2rem;
-    background-color: var(--color-bg    );
+    background-color: var(--color-secondary    );
+    color: var(--color-surface);
 }
+
 nav {
     display: flex;
     flex: 1;
     justify-content: space-around;
     padding-left: clamp(0rem, 2rem + 10vw, 50rem);
     justify-self: center;
+    color: var(--color-surface);
     
 }
 
@@ -22,14 +25,15 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+
 .quote{
     display: flex;
     flex-wrap: wrap;
     width: clamp(10vw, 20hw, 30vw);
     height: clamp(5vh, 10vh, 15vh);
     overflow: hidden;
-    height: 30px;
 }
+
 .quotes{
     display: grid;
     display: flex;
@@ -38,25 +42,26 @@ nav {
     gap: 1rem;
     place-items: center;
 }
+
 .about-section{
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
     .features {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
     .features {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     .features {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -67,16 +72,15 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
-
     padding: 3rem 2rem;
-
     background: linear-gradient(
         to right,
-        rgb(255, 152, 152),
-        rgb(164, 247, 255)
+        rgb(255 152 152),
+        rgb(164 247 255)
     );
 }
-@media (max-width: 480px) {
+
+@media (width <= 480px) {
     .site-footer {
         flex-direction: column;
     }
@@ -87,12 +91,15 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
 }
-@media (min-width: 480px) {
+
+
+@media (width >= 480px) {
     .values {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 768px) {
+
+@media (width >= 768px) {
     .values {
         grid-template-columns: repeat(3, 1fr);
     }
